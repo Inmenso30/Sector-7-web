@@ -8,8 +8,10 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
-            background-color: #070709;
-            background-image: radial-gradient(circle at top, #1f1200 0%, #070709 70%);
+            background-color: #060608;
+            background-image:
+                radial-gradient(circle at top, rgba(255, 23, 68, 0.18) 0%, rgba(18, 19, 23, 0.45) 38%, #060608 75%),
+                repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.015) 0px, rgba(255, 255, 255, 0.015) 2px, transparent 2px, transparent 10px);
             color: #ffffff;
             font-family: 'Orbitron', sans-serif;
             min-height: 100vh;
@@ -19,58 +21,78 @@
             padding: 20px;
         }
         .panel {
-            background: linear-gradient(145deg, #111216, #0a0b0d);
-            border: 2px solid #ff9100;
-            box-shadow: 0 0 25px rgba(255, 145, 0, 0.25);
+            background: linear-gradient(155deg, #17191f 0%, #0c0d10 55%, #07080a 100%);
+            border: 2px solid #ff1e42;
+            box-shadow:
+                0 0 28px rgba(255, 30, 66, 0.35),
+                inset 0 0 18px rgba(255, 255, 255, 0.04);
             border-radius: 16px;
             max-width: 460px;
             width: 100%;
             padding: 36px 24px;
             text-align: center;
+            position: relative;
         }
         .badge {
             display: inline-block;
-            background: rgba(255, 145, 0, 0.15);
-            border: 1px solid #ff9100;
-            color: #ffab40;
+            background: linear-gradient(180deg, rgba(176, 190, 197, 0.14), rgba(84, 110, 122, 0.14));
+            border: 1px solid #90a4ae;
+            color: #cfd8dc;
             font-size: 12px;
-            padding: 5px 14px;
+            font-weight: 600;
+            padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 2px;
             margin-bottom: 18px;
+            box-shadow: 0 0 10px rgba(144, 164, 174, 0.18);
         }
         h1 {
             font-size: 28px;
             font-weight: 900;
             font-style: italic;
-            color: #ffffff;
-            text-shadow: 0 0 12px rgba(255, 145, 0, 0.6);
-            margin-bottom: 10px;
+            color: #ff2a4b;
+            text-shadow:
+                0 0 10px rgba(255, 42, 75, 0.75),
+                0 0 24px rgba(255, 0, 55, 0.35);
+            margin-bottom: 12px;
+            letter-spacing: 1px;
         }
         p {
             font-size: 13px;
             line-height: 1.6;
-            color: #b0bec5;
+            color: #cfd8dc;
             margin-bottom: 28px;
+        }
+        p strong {
+            color: #ff526d;
         }
         .btn-download {
             display: block;
             width: 100%;
             padding: 18px;
-            background: linear-gradient(90deg, #ff6d00, #ff9100);
-            color: #000000;
+            background: linear-gradient(90deg, #b71c1c 0%, #ff1744 50%, #d50000 100%);
+            color: #ffffff;
+            border: 1px solid rgba(255, 138, 128, 0.45);
+            font-family: 'Orbitron', sans-serif;
             font-weight: 900;
             font-size: 15px;
+            letter-spacing: 1px;
             text-decoration: none;
             border-radius: 10px;
-            box-shadow: 0 0 18px rgba(255, 145, 0, 0.5);
-            transition: transform 0.15s ease;
+            box-shadow: 0 0 20px rgba(255, 23, 68, 0.5);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
         }
-        .btn-download:active { transform: scale(0.98); }
+        .btn-download:hover {
+            box-shadow: 0 0 26px rgba(255, 23, 68, 0.75);
+        }
+        .btn-download:active {
+            transform: scale(0.98);
+        }
         .note {
             margin-top: 18px;
             font-size: 11px;
-            color: #78909c;
+            line-height: 1.5;
+            color: #90a4ae;
         }
     </style>
 </head>
